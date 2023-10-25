@@ -16,6 +16,9 @@ devDependencies:
   '@pandacss/dev':
     specifier: ^0.17.0
     version: 0.17.0(@internationalized/date@3.5.0)(@types/react-dom@18.2.14)(@types/react@18.2.31)(typescript@5.2.2)
+  '@togana/preset-panda':
+    specifier: link:..
+    version: link:..
   '@types/react':
     specifier: ^18.2.15
     version: 18.2.31

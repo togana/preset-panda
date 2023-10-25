@@ -1,9 +1,18 @@
-import { css } from '../styled-system/css';
- 
+import { styled } from '../styled-system/jsx';
+import { container } from '../styled-system/patterns';
+
+const Text = ({ children }: { children: React.ReactNode }) => (
+  <styled.p bg="bg" color="text">
+    {children}
+  </styled.p>
+);
+
 function App() {
   return (
-    <div className={css({ fontSize: "2xl", fontWeight: 'bold' })}>Hello 🐼!</div>
-  )
+    <div className={container()}>
+      <Text>Hello 🐼!</Text>
+    </div>
+  );
 }
- 
+
 export default App;
