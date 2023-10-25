@@ -1,0 +1,30 @@
+{
+  "sortToTop": [
+    "name",
+    "version",
+    "description",
+    "keywords",
+    "homepage",
+    "bugs",
+    "license",
+    "author",
+    "files",
+    "bin",
+    "main",
+    "module",
+    "types",
+    "exports",
+    "repository",
+    "scripts",
+    "dependencies",
+    "devDependencies",
+    "peerDependencies",
+    "engines",
+    "packageManager",
+    "private"
+  ],
+  "required": [
+    "name",
+    "version"
+  ]
+}

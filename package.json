@@ -1,0 +1,42 @@
+{
+  "name": "@togana/preset-panda",
+  "version": "0.0.1",
+  "license": "MIT",
+  "author": "togana <o.togana@gmail.com>",
+  "files": [
+    "dist",
+    "package.json"
+  ],
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsup ./src",
+    "dev": "pnpm run build --watch",
+    "format": "pnpm run /format:.*/",
+    "format:code": "prettier ./src --write",
+    "format:package": "fixpack",
+    "package": "pnpm pack"
+  },
+  "dependencies": {
+    "@pandacss/types": "^0.17.0"
+  },
+  "devDependencies": {
+    "@tsconfig/node20": "^20.1.2",
+    "fixpack": "^4.0.0",
+    "prettier": "^3.0.3",
+    "tsup": "^7.2.0",
+    "typescript": "^5.2.2"
+  },
+  "engines": {
+    "node": "20.8.1"
+  },
+  "packageManager": "pnpm@8.9.2"
+}
